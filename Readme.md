@@ -19,13 +19,13 @@
 * cd laradock
 * docker-compose exec mysql bash
 
-#### Now here just loginto mysql using below credentials
+#### Now here just log into mysql using below credentials
 
 ```mysql
 mysql -uroot -proot
 ```
 
-#### once log into to mysql execute below queries one by one and also create database by name of ```testdocker```
+#### once you log into to mysql execute below queries one by one and also create database by name of ```testdocker```
 
 ```mysql
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';
