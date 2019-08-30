@@ -25,15 +25,16 @@
 mysql -uroot -proot
 ```
 
-#### once log into to mysql execute below queries one by one
+#### once log into to mysql execute below queries one by one and also create database by name of ```testdocker```
 
 ```mysql
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';
 ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY 'root';
 ALTER USER 'default'@'%' IDENTIFIED WITH mysql_native_password BY 'secret';
+CREATE DATABASE testdocker;
 ```
 
-now go back to ``docker-compose exec workspace bash`` and run ```php artisan migrate``` now it will successfully migrate everything to the database
+now go back to laradock folder and run ``docker-compose exec workspace bash`` and run ```php artisan migrate``` now it will successfully migrate everything to the database
 
 now go to ```http://localhost```  and you'll see a default laravel page if there is not login and registration button run this command ```php artisan make:auth``` it will create the default authentication scaffolding.
 in ```workspace bash``` and also run this command to see list of laravel commands and what they do  ```php artisan``` with description
