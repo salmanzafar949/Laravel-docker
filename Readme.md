@@ -5,7 +5,7 @@
 * clone this repo and ```cd Laravel-docker``` and ```composer install```
 * now inside Laravel-docker type ```cd laradock```
 * docker-compose up -d nginx mysql redis
-* docker-compose exec workspace bash (go to ````http://localhost```)
+* docker-compose exec workspace bash (go to ```http://localhost```)
 * php artisan migrate
 
 #### If you get an error like below while executing ``php artisan migrate``
